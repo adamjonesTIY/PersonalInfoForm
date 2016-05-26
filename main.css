@@ -1,0 +1,110 @@
+body {
+	background-color: #5BA3D6;
+
+}
+
+input {
+	background-color: #5BA3D6;
+	color:white;
+	border:1.5px solid white;
+	font-family: Arial;
+	width: 150px;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+select {
+	background-color: #5BA3D6;
+	color: white;
+	margin-bottom: 20px;
+	font-family: Arial;
+	width: 150px;
+	border: .5px solid grey;
+
+
+
+}
+
+label {
+	color:white;
+	text-transform: uppercase;
+	font-size: 8px;
+	font-family: Arial;
+	display: block;
+	padding-left: 1px;
+	margin-bottom: 2px;
+
+}
+
+.largetext {
+	height: 100px;
+}
+/*at this point all was good with the first 5 items on the left side*/
+
+.container {
+	width: 100%;
+}
+
+.column {
+	display: inline-block;
+}
+
+.left {
+	width: 200px;
+	vertical-align: top;
+
+}
+
+.middle {
+	width: 200px;
+	vertical-align: top;
+}
+
+.right {
+	width: 200px;
+	vertical-align: top;
+}
+/*everything worked up to this point, putting the 3 columns side-by-side looking great*/
+
+form {
+	width:640px;
+}
+
+/*can't move the button to the right-hand side*/
+
+/*now trying the media query thing*/
+
+@media only screen and (max-width: 990px) {
+    .column {
+    	display: block;
+    }
+    }
+}
+
+
+/*the below are things to change placeholder information*/
+
+::-webkit-input-placeholder {
+   color: #2B6C9B;
+  font-style:italic;
+  vertical-align: top;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #2B6C9B;
+  font-style:italic;
+  vertical-align: top;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #2B6C9B;
+  font-style:italic;
+  vertical-align: top;
+}
+
+:-ms-input-placeholder {  
+   color: #2B6C9B;
+  font-style:italic;
+  vertical-align: top;
+}
