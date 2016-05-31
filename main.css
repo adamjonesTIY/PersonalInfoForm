@@ -6,11 +6,12 @@ body {
 input {
 	background-color: #5BA3D6;
 	color:white;
-	border:1.5px solid white;
+	border:2px solid white;
 	font-family: Arial;
-	width: 150px;
+	width: 100%;
 	margin-bottom: 20px;
 	vertical-align: top;
+	padding:5px 0px;
 }
 
 select {
@@ -18,8 +19,8 @@ select {
 	color: white;
 	margin-bottom: 20px;
 	font-family: Arial;
-	width: 150px;
-	border: .5px solid grey;
+	width: 100%;
+	border: .25px solid grey;
 
 
 
@@ -29,10 +30,13 @@ label {
 	color:white;
 	text-transform: uppercase;
 	font-size: 8px;
+	font-weight: bold;
 	font-family: Arial;
 	display: block;
 	padding-left: 1px;
 	margin-bottom: 2px;
+	width: 100%;
+	text-align: left;
 
 }
 
@@ -43,31 +47,36 @@ label {
 
 .container {
 	width: 100%;
+	text-align: center;
 }
 
 .column {
 	display: inline-block;
+	width: 100px;
+	padding:0px 20px;
+	box-sizing: border-box;
 }
 
 .left {
-	width: 200px;
+	width: 32%;
 	vertical-align: top;
+	align-content: center;
 
 }
 
 .middle {
-	width: 200px;
+	width: 32%;
 	vertical-align: top;
 }
 
 .right {
-	width: 200px;
+	width: 32%; /*updated all 3 from 200px*/
 	vertical-align: top;
 }
 /*everything worked up to this point, putting the 3 columns side-by-side looking great*/
 
 form {
-	width:640px;
+	width:100%; /*updated from 620px 5/31*/
 }
 
 /*can't move the button to the right-hand side*/
